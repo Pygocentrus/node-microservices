@@ -1,0 +1,25 @@
+{
+  "name": "ms-api",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "./node_modules/.bin/pm2 start --name=\"api\" src/api.js",
+    "serve": "./node_modules/.bin/pm2 start --name=\"api\" src/api.js --watch",
+    "processes": "./node_modules/.bin/pm2 ls",
+    "flush": "./node_modules/.bin/pm2 flush",
+    "stop": "./node_modules/.bin/pm2 stop api",
+    "logs": "./node_modules/.bin/pm2 logs api"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "helmet": "^3.6.0",
+    "lodash": "^4.17.4",
+    "seneca": "^3.3.0",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "pm2": "^2.4.6"
+  }
+}

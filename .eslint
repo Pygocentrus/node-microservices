@@ -1,0 +1,24 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "rules": {
+    "no-var": "error",
+    "camelcase": "off",
+    "global-require": "off",
+    "no-unused-vars": "error",
+    "vars-on-top": "off",
+    "func-names": "off",
+    "max-len": "off",
+    "no-param-reassign": "warn",
+    "no-use-before-define": "warn",
+    "no-shadow": ["error", {
+      "allow": ["err", "done", "cb", "resolve", "reject"]
+    }],
+    "consistent-return": "off",
+    "comma-dangle": ["error", {
+      "arrays": "always-multiline",
+      "objects": "always-multiline",
+      "functions": "ignore"
+    }]
+  }
+}
