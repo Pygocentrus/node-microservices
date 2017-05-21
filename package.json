@@ -1,7 +1,26 @@
 {
+  "scripts": {
+    "deps": "npm i && npm run init-api && npm run init-notifications && npm run init-emails",
+    "stop": "npm run stop-notifications && npm run stop-emails && npm run stop-api",
+    "start": "npm run start-notifications && npm run start-emails && npm run start-api",
+    "serve": "npm run serve-notifications && npm run serve-emails && npm run serve-api",
+    "serve-api": "cd packages/api && npm run serve",
+    "serve-emails": "cd packages/emails && npm run serve",
+    "serve-notifications": "cd packages/notifications && npm run serve",
+    "start-api": "cd packages/api && npm run start",
+    "start-emails": "cd packages/emails && npm run start",
+    "start-notifications": "cd packages/notifications && npm run start",
+    "stop-api": "cd packages/api && npm run stop",
+    "stop-emails": "cd packages/emails && npm run stop",
+    "stop-notifications": "cd packages/notifications && npm run stop",
+    "init-api": "cd packages/api && ../../node_modules/.bin/yarn",
+    "init-emails": "cd packages/emails && ../../node_modules/.bin/yarn",
+    "init-notifications": "cd packages/notifications && ../../node_modules/.bin/yarn"
+  },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
     "eslint": "^3.19.0",
-    "eslint-config-airbnb": "^15.0.1"
+    "eslint-config-airbnb": "^15.0.1",
+    "yarn": "^0.24.4"
   }
 }
