@@ -16,6 +16,7 @@
     "seneca": "^3.3.0"
   },
   "devDependencies": {
+    "pm2": "^2.4.6",
     "winston": "^2.3.1"
   }
 }

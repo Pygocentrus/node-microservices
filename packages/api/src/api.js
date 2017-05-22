@@ -8,8 +8,8 @@ app.use(helmet());
 
 
 seneca
-  .client({ port: 3001, pin: 'role: notifications' })
-  .client({ port: 3002, pin: 'role: emails' });
+  .client({ port: 4001, pin: 'role: notifications' })
+  .client({ port: 4002, pin: 'role: emails' });
 
 
 app.get('/', (req, res, next) => {
@@ -24,4 +24,4 @@ app.get('/', (req, res, next) => {
 });
 
 
-app.listen(3000, () => logger.info('[API] listening on port 3000!'));
+app.listen(4000, () => logger.info('[API] listening on port 3000!'));

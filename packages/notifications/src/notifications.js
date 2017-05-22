@@ -13,4 +13,4 @@ seneca.add('role: notifications, cmd: process', (msg, respond) => {
 });
 
 
-seneca.listen(3001);
+seneca.listen(4001);

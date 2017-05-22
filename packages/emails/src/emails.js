@@ -10,4 +10,4 @@ seneca.add('role: emails, cmd: send', (msg, respond = noop) => {
 });
 
 
-seneca.listen(3002);
+seneca.listen(4002);
